@@ -1,0 +1,132 @@
+/* Reset & Base Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #3a0ca3, #7209b7); /* Deep midnight purple gradient */
+    color: #1e1e2f;
+    line-height: 1.7;
+    padding: 0 20px;
+  }
+  
+  /* Navigation Bar */
+  .navbar {
+    background-color: #fefae0; /* Soft ivory */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 2rem;
+    border-bottom: 4px solid #ffb703;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo {
+    font-size: 28px;
+    color: #7209b7;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #3a0ca3;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #ffb703;
+  }
+  
+  /* Layout Container */
+  .container {
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+    padding: 0 10px;
+    flex-wrap: wrap;
+  }
+  
+  /* Main Content Styling */
+  .content {
+    flex: 3;
+    background-color: #fefae0;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .content h2 {
+    color: #3a0ca3;
+    margin-bottom: 15px;
+    font-size: 24px;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    flex: 1;
+    background-color: #ffb703; /* Gold */
+    color: #1e1e2f;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .sidebar h3 {
+    margin-bottom: 10px;
+    color: #7209b7;
+  }
+  
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    background-color: #3a0ca3;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 10px;
+      margin-top: 1rem;
+    }
+  
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .logo {
+      font-size: 20px;
+    }
+  
+    .content, .sidebar {
+      padding: 20px;
+    }
+  
+    .nav-links a {
+      font-size: 15px;
+    }
+  }
+  
